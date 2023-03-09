@@ -13,6 +13,7 @@ public class Lavoura {
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(columnDefinition = "int")
     private Long id;
     @Column(nullable = false, length = 200)
     private String nomeLavoura;
