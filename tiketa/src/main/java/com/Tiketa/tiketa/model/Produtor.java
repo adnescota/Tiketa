@@ -4,9 +4,7 @@ package com.Tiketa.tiketa.model;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import jakarta.persistence.*;
 import lombok.*;
-import org.hibernate.Hibernate;
 
-import java.util.Objects;
 
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)

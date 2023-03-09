@@ -1,4 +1,10 @@
 package com.Tiketa.tiketa.repository;
 
-public interface LavouraRepository {
+import com.Tiketa.tiketa.model.Lavoura;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+
+public interface LavouraRepository extends JpaRepository <Lavoura, Long> {
 }
