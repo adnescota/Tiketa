@@ -1,26 +1,30 @@
 package com.Tiketa.tiketa.model;
 
 
-import com.fasterxml.jackson.annotation.JsonInclude;
 import jakarta.persistence.*;
 import lombok.*;
+import org.hibernate.Hibernate;
 
-import java.io.Serializable;
+import java.util.Objects;
 
-
-public class Produtor implements Serializable {
-   // private static final long serialVersionUID = 1L;
+@Getter
+@Setter
+@ToString
+@RequiredArgsConstructor
+@Entity
+public class Produtor {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(columnDefinition = "int")
     private Long id;
-    @Column(nullable = false, length = 150)
+    @Column
     private String nome;
-    @Column(nullable = false, length = 200)
+    @Column
+
     private String email;
-    @Column(nullable = true, length = 13)
+    @Column
     private String telefone;
-    @Column(nullable = false, length = 14)
+    @Column
     private String cpf;
 
 }
